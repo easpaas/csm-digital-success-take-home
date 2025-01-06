@@ -1,4 +1,8 @@
+'use client'
+
 import Link from 'next/link'
+import AnswerToggle from "@/app/components/AnswerToggle.tsx"
+import ANSWER_SEVEN  from "@/app/answers/ANSWER_SEVEN.mdx"
 
 const question_seven = {
     main: "What resources would you want to prepare to make sure that the CISO of a newly signed Enterprise customer has everything they need to succeed as they migrate to the Enterprise version of the platform? Feel free to use documentation from vercel.com, and our YouTube channel to find assets to help",
@@ -18,7 +22,9 @@ export default function Seven() {
             </div>
             <div className="w-1/2">  
                 <div className="w-full py-8">
-                    {/* TODO answer toggle */}
+                    <AnswerToggle>
+                        <ANSWER_SEVEN />
+                    </AnswerToggle>
                 </div>
             </div>
         </div>

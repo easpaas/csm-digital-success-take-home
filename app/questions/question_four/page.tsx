@@ -1,4 +1,8 @@
+'use client'
+
 import Link from 'next/link'
+import AnswerToggle from "@/app/components/AnswerToggle.tsx"
+import ANSWER_FOUR  from "@/app/answers/ANSWER_FOUR.mdx"
 
 const question_four = {
     main: "An Enterprise customer who has been sold Vercel through a reseller called Sitecore has reached out to the team to ask about the product. Can you give a brief 2-5 sentence introduction to Vercel to showcase what Vercel does?",
@@ -18,7 +22,9 @@ export default function Four() {
             </div>
             <div className="w-1/2">  
                 <div className="w-full py-8">
-                    {/* TODO: answer toggle */}
+                    <AnswerToggle>
+                        <ANSWER_FOUR />
+                    </AnswerToggle>
                 </div>
             </div>
         </div>

@@ -1,4 +1,8 @@
+'use client'
+
 import Link from 'next/link'
+import AnswerToggle from "@/app/components/AnswerToggle.tsx"
+import ANSWER_SIX  from "@/app/answers/ANSWER_SIX.mdx"
 
 const question_six = {
     main: "An Enterprise customer, new to Next.js and Vercel, asks about a high usage bill regarding fast origin transfer and fast data transfer. They have two questions",
@@ -22,7 +26,9 @@ export default function Six() {
             </div>
             <div className="w-1/2">  
                 <div className="w-full py-8">
-                    {/* TODO: answer toggle */}
+                    <AnswerToggle>
+                        <ANSWER_SIX />
+                    </AnswerToggle>
                 </div>
             </div>
         </div>

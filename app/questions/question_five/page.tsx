@@ -1,5 +1,8 @@
-import Link from 'next/link'
+'use client'
 
+import Link from 'next/link'
+import AnswerToggle from "@/app/components/AnswerToggle.tsx"
+import ANSWER_FIVE  from "@/app/answers/ANSWER_FIVE.mdx"
 
 const question_five = {
     main: "A Pro customer who typically spends $900 monthly on Vercel has experienced a sudden increase to $2,100 for their next billing period due to increased data transfer costs. Their main website also shows poor Core Web Vitals performance, specifically a failed Largest Contentful Paint score",
@@ -19,7 +22,9 @@ export default function Five() {
             </div>
             <div className="w-1/2">  
                 <div className="w-full py-8">
-                    {/* TODO: answer toggle */}
+                    <AnswerToggle>
+                        <ANSWER_FIVE />
+                    </AnswerToggle>
                 </div>
             </div>
         </div>

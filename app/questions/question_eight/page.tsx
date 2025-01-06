@@ -1,4 +1,8 @@
+'use client'
+
 import Link from 'next/link'
+import AnswerToggle from "@/app/components/AnswerToggle.tsx"
+import ANSWER_EIGHT  from "@/app/answers/ANSWER_EIGHT.mdx"
 
 const question_eight = {
     main: "How could we improve or alter this familiarization exercise?"
@@ -16,7 +20,9 @@ export default function Eight() {
             </div>
             <div className="w-1/2">  
                 <div className="w-full py-8">
-                    {/* TODO: answer toggle */}
+                    <AnswerToggle>
+                        <ANSWER_EIGHT />
+                    </AnswerToggle>
                 </div>
             </div>
         </div>
