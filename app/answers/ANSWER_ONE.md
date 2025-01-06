@@ -1,0 +1,19 @@
+# Question One
+
+Thank you for reaching out, Christy! I would be more than happy to help you understand the difference between React and Next.js, as well as explaining benefits of using Next.js to ensure your marketing pages meet their core web vitals, SEO best practices and conversion rate goals.
+
+### React vs Next.js
+___
+**React** 
+
+React is a JavaScript library for building user interfaces, primarily focusing on the view layer. It allows for dynamic, component-based applications but often requires additional libraries for routing, server-side rendering (SSR), or SEO optimization. 
+
+**Next.js**
+
+Next.js, on the other hand, is a framework built on React, designed to enhance it with features like SSR and static site generation (SSG), which improve performance and SEO. 
+___
+
+### Benefits of Next.js
+For your team’s goals, Next.js stands out because it directly impacts core web vitals with faster load times via pre-rendered HTML and built-in optimizations like image handling and code splitting. It’s also SEO-friendly, ensuring search engine bots crawl fully rendered pages and enabling easy metadata and dynamic URL management. These benefits can reduce bounce rates, enhance engagement, and improve conversion rates. Additionally, developers will appreciate the structured framework and seamless integration with React, allowing faster iteration and advanced features without additional configuration. By choosing Next.js, your team can craft high-performing, SEO-optimized, and user-focused marketing pages. 
+
+Please let me know if you'd like a deeper dive into specific features or help getting started!  
