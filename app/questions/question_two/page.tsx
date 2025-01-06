@@ -1,5 +1,8 @@
-import Link from 'next/link'
+'use client'
 
+import Link from 'next/link'
+import AnswerToggle from "@/app/components/AnswerToggle.tsx"
+import ANSWER_TWO  from "@/app/answers/ANSWER_TWO.mdx"
 
 const question_two = {
     main: "A customer has reached out asking, “When should I choose to use Edge Functions, Serverless Functions, or Edge Middleware with Vercel?ˮ Please write a reply to the customer",
@@ -19,7 +22,9 @@ export default function Two() {
             </div>
             <div className="w-1/2">  
                 <div className="w-full py-8">
-                    {/* TODO: answer toggle */}
+                    <AnswerToggle>
+                        <ANSWER_TWO />
+                    </AnswerToggle>
                 </div>
             </div>
         </div>

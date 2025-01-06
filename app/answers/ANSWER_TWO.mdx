@@ -1,0 +1,43 @@
+Thank you for reaching out, Trevor! 
+<br/>
+It’s great to see your focus on leveraging geolocation for personalization on your online shop. Vercel offers several powerful features, and understanding when to use Edge Functions, Serverless Functions, and Edge Middleware will help ensure your site is optimized for both performance and personalization. Let’s break it down.
+
+## Edge Functions
+**When to use it:**
+
+*Geolocation-based personalizations:* Since you’re personalizing content based on location, Edge Functions are a great option for delivering localized experiences. Edge Functions run at the edge of Vercel's global network, close to your users, providing low-latency execution for tasks like retrieving personalized product recommendations based on the user’s location.
+
+*Real-time processing:* These are ideal for handling high-performance, low-latency requests, where performance is crucial and you need to execute logic quickly.
+
+*Example use case:*
+You could use an Edge Function to determine a visitor’s location and dynamically adjust the products available for shipping, ensuring users only see products that can be legally shipped to their location.
+
+## Serverless Functions
+**When to use it:**
+
+*Complex backend logic or API calls:* Serverless Functions are ideal for more complex tasks that require backend processing, such as interacting with a database, external APIs, or processing user data that doesn’t require low-latency execution.
+
+*Request handling:* Serverless Functions can be used to process user data, like creating or updating user profiles, handling user accounts, or processing orders.
+
+*Example use case:*
+If you need to fetch product details from a database or communicate with an external API (e.g., to check shipping restrictions for a certain region), a Serverless Function would be appropriate.
+
+## Edge Middleware
+**When to use it:**
+
+*Request interception:* Edge Middleware is perfect for modifying requests or responses before they reach your Next.js application. This can include adding security headers, redirecting users, or modifying cookies based on geolocation data.
+
+*Routing and personalization:* Use Edge Middleware for real-time geolocation-based routing or personalization at the edge, without needing to invoke a separate function.
+
+*Example use case:*
+You could use Edge Middleware to inspect a user’s location and immediately redirect them to a page that confirms whether their delivery location is eligible for shipping alcohol, or even show a personalized message about restrictions based on their region.
+
+***Which Should You Choose?***
+
+For real-time geolocation-based personalization (e.g., restricting alcohol shipping based on location), Edge Functions and Edge Middleware are your best options, as they can handle requests close to the user, offering lower latency and faster response times.
+
+If you need to execute more complex logic (e.g., interacting with external APIs or databases), Serverless Functions will be better suited for those tasks.
+
+By leveraging Vercel’s suite of tools, you can deliver a fast, personalized experience for your customers based on their location and shipping eligibility. If you’re looking to personalize based on user geolocation, I’d recommend starting with Edge Functions or Middleware for speed and efficiency, while utilizing Serverless Functions when deeper backend interactions are necessary.
+
+Please let me know if you'd like any further clarification or assistance setting up these features!

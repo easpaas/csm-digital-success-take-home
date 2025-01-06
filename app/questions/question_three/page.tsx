@@ -1,4 +1,8 @@
+'use client'
+
 import Link from 'next/link'
+import AnswerToggle from "@/app/components/AnswerToggle.tsx"
+import ANSWER_THREE  from "@/app/answers/ANSWER_THREE.mdx"
 
 const question_three = {
     main: "Through use of a monitoring dashboard, you notice that an Enterprise customer has reduced the number of builds and their usage has gone down by about half quarter over quarter. Please write an email to the champion and executive sponsor of the account to re-engage and start to perform some discovery.",
@@ -18,7 +22,9 @@ export default function Three() {
             </div>
             <div className="w-1/2">  
                 <div className="w-full py-8">
-                    {/* TODO: answer toggle */}
+                    <AnswerToggle>
+                        <ANSWER_THREE />
+                    </AnswerToggle>
                 </div>
             </div>
         </div>
